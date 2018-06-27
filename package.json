@@ -1,0 +1,23 @@
+{
+  "name": "boilerplate-codeceptjs",
+  "version": "1.0.0",
+  "description": "boilerplate for codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/codeceptjs run --steps --reporter mochawesome --verbose",
+    "start:server": "node_modules/.bin/selenium-standalone start",
+    "install:server": "node_modules/.bin/selenium-standalone install",
+    "fresh:start:server": "node_modules/.bin/selenium-standalone install && node_modules/.bin/selenium-standalone start",
+    "stop:server": "node_modules/.bin/selenium-standalone stop"
+  },
+  "author": "Faik Faisal",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^1.2.1",
+    "expect": "^23.2.0",
+    "lodash": "^4.17.10",
+    "mochawesome": "^3.0.2",
+    "selenium-standalone": "^6.15.1",
+    "webdriverio": "^4.13.0"
+  }
+}
